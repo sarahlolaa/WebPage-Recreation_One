@@ -1,0 +1,566 @@
+﻿
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+}
+
+.header {
+    display: flex;
+    background: white;
+    font-size: 13px;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    padding: 0.5rem 0;
+}
+
+.div-left {
+    display: flex;
+    flex: 1 1 0;
+    padding: 0.5rem;
+}
+
+.navigator {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #FF007F;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    margin: auto 0;
+}
+
+.bar {
+    position: absolute;
+    top: 1.025rem;
+    left: 0.385rem;
+    width: 65%;
+    height: 0.15rem;
+    background: white;
+}
+
+    .bar::before, .bar::after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: white;
+    }
+
+    .bar::before {
+        transform: translateY(-6.5px);
+    }
+
+.div-right {
+    display: flex;
+}
+
+.bar::after {
+    transform: translateY(6.5px);
+}
+
+.div-left h4 {
+    margin: auto 0 auto 0.7rem;
+}
+
+
+
+.search-bar {
+    display: none;
+    flex: 1 1 0;
+    padding: 0.5rem;
+}
+
+    .search-bar div {
+        position: relative;
+        border: 1px solid rgb(240, 240, 240);
+        border-radius: 20px;
+        height: 2.4rem;
+        width: 45%;
+        margin: 0 auto;
+    }
+
+    .search-bar img {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        background: none;
+        border: none;
+        transform: scaleX(-1);
+    }
+
+    .search-bar input {
+        border: none;
+        outline: none;
+        width: 8rem;
+        margin: 0.5rem 3rem;
+    }
+
+.div-right {
+    display: flex;
+    flex: 1 1 0;
+    justify-content: flex-end;
+    padding: 0.5rem;
+}
+
+    .div-right img {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+    }
+
+    .div-right div {
+        margin: auto 0 auto 0.7rem;
+    }
+
+    .div-right h4 {
+        margin-bottom: 0.2rem;
+    }
+
+.div-right p {
+    font-size: 11px;
+}
+
+.menu-bar {
+    position: fixed;
+    z-index: 1;
+    display: none;
+    background: #FF007F;
+    width: 280px;
+    padding: 95px 0 50px 20px;
+    font-size: 12px;
+}
+
+    .menu-bar .logo {
+        display: none;
+        font-size: 16px;
+        color: white;
+        margin: 5px 0 40px 50px;
+    }
+
+    .menu-bar > li {
+        display: flex;
+        padding: 12px;
+    }
+
+    .menu-bar a {
+        text-decoration-line: none;
+        color: white;
+    }
+
+    .menu-bar img {
+        width: 16px;
+        height: 16px;
+        margin-right: 20px;
+    }
+        .menu-bar img#menu-icon0 {
+            width: 21px;
+            height: 14px;
+            margin-right: 16px;
+        }
+
+        .menu-bar img.menu-icon {
+            width: 18px;
+            margin-right: 18px;
+        }
+
+.active {
+    background: white;
+    border-radius: 30px 0 0 30px;
+}
+
+.active a{
+    color: #FF007F;
+}
+
+    .active #menu-icon0 {
+        content: url("images/Dashboard-pink.png");
+    }
+
+    .active #menu-icon1 {
+        content: url("images/Customers-pink.png");
+    }
+
+    .active #menu-icon2 {
+        content: url("images/Projects-pink.png");
+    }
+
+    .active #menu-icon3 {
+        content: url("images/Orders-pink.png");
+    }
+
+    .active #menu-icon4 {
+        content: url("images/Inventory-pink.png");
+    }
+
+    .active #menu-icon5 {
+        content: url("images/Accounts-pink.png");
+    }
+
+    .active #menu-icon6 {
+        content: url("images/Projects-pink.png");
+    }
+
+.statistics {
+    padding: 5rem 0 1.2rem 0;
+}
+
+    .statistics > div {
+        display: flex;
+        justify-content: space-between;
+        background: white;
+        padding: 20px;
+        margin: 1.4rem 1rem;
+    }
+
+    .statistics h4 {
+        font-size: 20px;
+    }
+
+    .statistics p {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    .statistics img {
+    width: 10%;
+    height: 10%;
+    margin: auto 0;
+    }
+
+div.income {
+    background: #FF007F;
+}
+
+
+.projects {
+    background: white;
+    margin: 0 1rem;
+    height: 200px;
+    overflow: hidden;
+}
+
+.projects div {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0.625rem;
+}
+
+    .projects button {
+        display: flex;
+        background: #FF007F;
+        justify-content: space-around;
+        border: none;
+        outline: none;
+        padding: 0.4rem 0.6rem;
+        border-radius: 7px;
+    }
+
+    .projects button p {
+        margin: auto 0;
+        color: white;
+        font-weight: bold;
+    }
+
+    .arrow {
+        margin: auto 0;
+        width: 20%;
+        height: 40%;
+    }
+
+.projects table {
+    width: 97%;
+    text-align: left;
+    font-size: 12px;
+    margin-left: 0.625rem;
+}
+
+.projects td {
+    padding-bottom: 0.625rem;
+}
+
+.projects table th:nth-child(1) {
+    width: 35%;
+}
+
+.projects table th:nth-child(2) {
+    width: 20%;
+}
+
+.projects table th:nth-child(3) {
+    width: 10%;
+}
+
+.projects td:nth-child(1), .projects td:nth-child(2) {
+    padding-right: 2.1rem;
+}
+
+.projects td:nth-child(3) {
+    display: flex;
+}
+
+span.purple, span.pink, span.orange {
+    margin-right: 0.3rem;
+}
+
+span.purple {
+    color: purple;
+}
+
+span.pink {
+    color: #FF007F;
+}
+
+span.orange {
+    color: rgb(243, 114, 28);
+}
+
+
+.customers {
+    background: white;
+    margin: 1.3rem 1rem;
+    height: 210px;
+    overflow: hidden;
+}
+
+.customers-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0.625rem;
+    border-bottom: 0.5px solid rgb(240, 240, 240);
+}
+
+.customers-bar button {
+    display: flex;
+    background: #FF007F;
+    justify-content: space-around;
+    border: none;
+    outline: none;
+    padding: 0.4rem 0.6rem;
+    border-radius: 7px;
+}
+
+    .customers-bar button p {
+        margin: auto 0;
+        color: white;
+        font-weight: bold;
+    }
+
+    .customers-bar .arrow {
+        margin: auto 0;
+        width: 20%;
+        height: 40%;
+    }
+
+.details {
+    display: flex;
+    font-size: 12px;
+    justify-content: space-between;
+    padding: 0.4rem 0.6rem;
+}
+
+    .details div:first-child {
+        display: flex;
+    }
+
+    .details .customer-image {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        margin-right: 8px;
+    }
+
+    .details .customer-icon {
+        width: 18px;
+        height: 18px;
+        margin-right: 5px;
+    }
+
+    .details .customer-icon:last-child {
+        margin-right: 0;
+    }
+
+.details .name p:first-child {
+    font-weight: bold;
+}
+
+.display {
+    display: block;
+}
+
+.hide-content {
+    height: auto;
+    overflow: auto;
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .statistics {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+        .statistics > div {
+            width: 44%;
+            margin: 1.4rem 0.8rem 0.2rem 0.8rem;
+        }
+
+        .statistics img {
+            width: 25px;
+            height: 22px;
+        }
+
+    .projects {
+        height: 290px;
+    }
+
+        .projects.hide-content {
+            height: auto;
+            overflow: auto;
+        }
+
+    .customers {
+        height: 310px;
+    }
+
+        .customers.hide-content {
+            height: auto;
+            overflow: auto;
+        }
+
+}
+
+@media screen and (min-width: 769px) {
+
+    .header {
+        width: 94.5%;
+        right: 0px;
+    }
+
+    .navigator {
+        background: white;
+    }
+
+    .bar {
+        background: black;
+    }
+
+        .bar::before, .bar::after {
+            background: black;
+        }
+
+    .search-bar {
+        display: block;
+    }
+
+    .menu-bar {
+        display: block;
+        height: 100%;
+        width: auto;  
+        padding-top: 70px;
+    }
+
+        .menu-bar > li {
+            padding: 18px 9px;
+            font-size: 14px;
+        }
+
+        .menu-bar a {
+           display: none;
+        }
+
+    /**********************Toggle Classes********************/
+    .toggle.menu-bar {
+        padding-top: 20px;
+    }
+
+    .toggle a {
+        display: block;
+        padding-right: 100px;
+    }
+
+    .toggle .logo {
+        display: flex;
+    }
+
+    .header-width {
+       width: 81.5%;
+
+    }
+    
+    /*******************************************************/
+
+     .statistics {
+        position:fixed;
+        right: 0;
+        width: 94%;
+        display: flex;        
+    }
+
+        .statistics > div {
+            width: 22.9%;
+            margin: 2rem 0.8rem 1.2rem 0.8rem;
+        }
+
+        .statistics img {
+            width: 25px;
+            height: 22px;
+        }
+
+    /*******************************************************/
+    .information {
+        position: fixed;
+        top: 235px;
+        right: 0;
+        display: flex;
+        justify-content: space-around;
+        width: 94.5%;
+    }
+
+        .information .projects {
+            width: 62%;
+            height: auto;
+        }
+
+        .information .projects table {
+           height: 83%;
+        }
+
+        .information .customers {
+            margin-top: 0;
+            width: 32%;
+            height: auto;
+        }
+
+    /*******************************************************/
+    .shift-page {
+        width: 81.9%;
+    }
+
+        .shift-page.statistics {
+            padding-top: 2.9rem;
+        }
+
+        .shift-page.statistics > div {
+            width: 22.6%;
+        }
+
+        .shift-page.information {
+            top: 200px;
+        }
+        
+}
+
+
